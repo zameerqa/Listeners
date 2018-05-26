@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sanity suite for Google" parallel="tests" >
+<listeners>
+<listener class=""/>
+<listener class-name="retrylogic.runtime.RetryLogicRuntime"/>
+</listeners>
+  <test name="Default test" >
+  	<parameter name="browser" value="firefox" />
+    <classes>
+      <class name="tests.GooglePage1"/>
+      <class name="tests.FacebookPage1"/>
+    </classes>
+  </test> 
+  <test name="Default test1" parameter="tests">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="tests.GooglePage"/>
+      <class name="tests.FacebookPage"/>
+    </classes>
+  </test> 
+</suite> 
